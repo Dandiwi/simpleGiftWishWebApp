@@ -8,4 +8,6 @@ public interface WishlistService {
     List<Wishlist> getAllWishes();
 
     void saveWish(Wishlist wishlist);
+
+    Wishlist getWishById(long id);
 }

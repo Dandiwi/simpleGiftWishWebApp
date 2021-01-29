@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Wish Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <h1> Wish Form</h1>
+        <hr>
+        <h2> Save Wish</h2>
+
+        <form action="#" th:action="@{/saveWish}" th:object=${wish} method="POST">
+        <input type="text" th:field = "*{name}" placeholder="Name" class="form-control mb-4 col-4">
+        <input type="text" th:field = "*{gift}" placeholder="gift" class="form-control mb-4 col-4">
+        <input type="text" th:field = "*{desc}" placeholder="descritpion" class="form-control mb-4 col-4">
+        <input type="text" th:field = "*{url}" placeholder="link" class="form-control mb-4 col-4">
+
+        <button type="submit" class="btn btn-info col-2"> Save Wish </button>
+        </form>
+    </div>
+</body>
+</html>

@@ -18,15 +18,17 @@
         <th> Gift </th>
         <th> Description </th>
         <th> URL </th>
+        <th> Actions </th>
     </tr>
     </thead>
     <tbody><tr th:each="wishlist : ${listWishes}">
         <td th:text="${wishlist.name}"></td>
         <td th:text="${wishlist.gift}"></td>
         <td th:text="${wishlist.desc}"></td>
-        <td>
-            <a th:href="${wishlist.url}" th:text="${wishlist.url}" target="_blank" />
-            </td>
+        <td> <a th:href="${wishlist.url}" th:text="${wishlist.url}" target="_blank" /></td>
+        <td> <a th:href="@{/showFormForUpdate/{id}(id=${wishlist.id})}" class="btn btn-primary"> Update </a></td>
+
+
     </tr>
     </tbody>
 </table>
