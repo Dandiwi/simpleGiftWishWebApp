@@ -17,6 +17,7 @@
         <th> Name </th>
         <th> Gift </th>
         <th> Description </th>
+        <th> IMG </th>
         <th> URL </th>
         <th> Actions </th>
     </tr>
@@ -25,10 +26,10 @@
         <td th:text="${wishlist.name}"></td>
         <td th:text="${wishlist.gift}"></td>
         <td th:text="${wishlist.desc}"></td>
+        <td> <img alt="img" th:src="${wishlist.img}"
+                 width="150" height="150"></td>
         <td> <a th:href="${wishlist.url}" th:text="${wishlist.url}" target="_blank" /></td>
         <td> <a th:href="@{/showFormForUpdate/{id}(id=${wishlist.id})}" class="btn btn-primary"> Update </a></td>
-
-
     </tr>
     </tbody>
 </table>

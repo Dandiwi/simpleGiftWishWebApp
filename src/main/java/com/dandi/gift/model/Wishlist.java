@@ -21,6 +21,16 @@ public class Wishlist {
 
     private URL url;
 
+    private String img;
+
+
+    public String getImg() {
+        return img;
+    }
+
+    public void setImg(String img) {
+        this.img = img;
+    }
 
     public long getId() {
         return id;
