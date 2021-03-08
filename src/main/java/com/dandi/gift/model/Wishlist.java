@@ -23,6 +23,16 @@ public class Wishlist {
 
     private String img;
 
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
+
+    private int price;
+
 
     public String getImg() {
         return img;

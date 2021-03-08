@@ -14,6 +14,7 @@
         <form action="#" th:action="@{/saveWish}" th:object=${wish} method="POST">
         <input type="text" th:field = "*{name}" placeholder="Name" class="form-control mb-4 col-4">
         <input type="text" th:field = "*{gift}" placeholder="gift" class="form-control mb-4 col-4">
+        <input type="text" th:field = "*{price}" placeholder="Price" class="form-control mb-4 col-4">
         <input type="text" th:field = "*{desc}" placeholder="descritpion" class="form-control mb-4 col-4">
         <input type="text" th:field = "*{url}" placeholder="link" class="form-control mb-4 col-4">
         <input type="text" th:field = "*{img}" placeholder="img link" class="form-control mb-4 col-4">
